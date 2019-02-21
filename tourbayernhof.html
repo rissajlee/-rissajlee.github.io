@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Plan Your Visit</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        
+        <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $("#hamburger").click(function() {
+                    $("#menu").toggleClass("on");
+                    $("#hamburger").toggleClass("switch");
+                })
+            })
+            
+            window.onload = function() {
+              var context = new AudioContext();
+            }
+        </script>      
+    
+    </head>
+    
+    
+    
+    <body id="tour">
+       
+        <main id="tour">
+            <header>
+                <a href="index.html"><h1 id="logo">Bayernhof Museum</h1></a>
+                <a href="#" id="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </a>
+                <nav>
+                    <ul id="menu">
+                        <li><a href="about.html" class="mobileMenu">About</a></li>
+                        <li class="noMobileMenu"><a class="vertical_line">|</a></li>
+                        <li><a href="tourbayernhof.html" class="mobileMenu">Tour Bayernhof</a></li>
+                        <li class="noMobileMenu"><a class="vertical_line">|</a></li>
+                        <li><a class="button Nav_button" href="planYourVisit.html">Plan Your Visit</a> 
+                            <ul>
+                                <li><a href="scheduleATour.html" class="mobileMenu dash">Schedule a Tour</a></li>
+                                <li><a href="locationAndMap.html" class="mobileMenu dash">Location &amp Map</a></li>
+                                <li><a href="preservation.html" class="mobileMenu dash">Preservation</a></li>
+                            </ul>   
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <section id="tour">
+                
+                <video autoplay controls muted>
+                    <source src="media/Tour.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                
+                <iframe id="stream" src="media/Edelweiss.mp3" 
+                style="background: rgba(0,0,0,0)" height="50px" width="90px"></iframe>
+
+                <!--iframe above used for autoplay-->
+                <!--<audio controls autoplay loop>-->
+                <!--    <source src="media/Edelweiss.mp3" type="audio/mpeg"> -->
+                <!--    Your browser does not support the audio element.-->
+                <!--</audio>-->
+                
+                <div class="clear"></div>
+                
+                <p class="desc">Disclaimer: We were unable to complete this page.
+                The video above is what the completed webpage would have looked like.</p>
+            </section>
+
+            
+        </main>
+    
+
+    </body>
+</html>

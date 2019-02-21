@@ -1,0 +1,93 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>About/History</title>
+        <meta charset='utf-8'>
+        <link rel='stylesheet' type='text/css' href= 'style.css'>
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $("#hamburger").click(function() {
+                    $("#menu").toggleClass("on");
+                    $("#hamburger").toggleClass("switch");
+                })
+            })
+        </script>
+
+    </head>
+    <body class="all">
+        <main>
+        
+<!--   NAV BAR    -->
+            <header>
+                <a href="index.html"><h1 id="logo">Bayernhof Museum</h1></a>
+                <a href="#" id="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </a>
+                <nav>
+                    <ul id="menu">
+                        <li><a href="about.html" class="mobileMenu">About</a></li>
+                        <li class="noMobileMenu"><a class="vertical_line">|</a></li>
+                        <li><a href="tourbayernhof.html" class="mobileMenu">Tour Bayernhof</a></li>
+                        <li class="noMobileMenu"><a class="vertical_line">|</a></li>
+                        <li><a class="button Nav_button" href="planYourVisit.html">Plan Your Visit</a> 
+                            <ul>
+                                <li><a href="scheduleATour.html" class="mobileMenu dash">Schedule a Tour</a></li>
+                                <li><a href="locationAndMap.html" class="mobileMenu dash">Location &amp Map</a></li>
+                                <li><a href="preservation.html" class="mobileMenu dash">Preservation</a></li>
+                            </ul>   
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+
+<!--    ABOUT      -->
+            <section id="about">
+                
+                <h1 id="aboutTitle">ABOUT</h1>
+                
+                
+                <img id="headshot" src="images/headshot.jpg">
+    
+                <div id="aboutText">
+                    <p>This extremely unique, 19,000 square foot museum (the former residence of Charles B. Brown, III, the Museum’s founder) houses a world-class collection of music boxes and other antique automatic music machines, as well as many other fascinating items.</p>
+                    <p>The building itself provides guests with a most enjoyable experience as they pass from one unbelievable room to another, at times through hidden doors and secret passageways. And almost the entire south side of the Museum is glass, affording fantastic views up and down the Allegheny River.</p>
+                </div>
+                <div class="clear"></div>
+            </section>
+
+<!--   HISTORY    -->
+            <section id="history">
+                
+                <h1 id="historyTitle">HISTORY</h1>
+                <!--<div class="line2"><hr/></div>-->
+                <!--<div class="line3"><hr/></div>-->
+                
+                <img id="window" src="images/aboutpic.png">
+                
+                <div id="historyText">
+                    <p>Chuck Brown wanted a unique house with a great view of Pittsburgh and the surrounding countryside. In 1968, he rented a helicopter and flew up and down the three rivers, looking for a special spot to build his special home. On top of the mountain overlooking Sharpsburg, the Allegheny River, and the Pittsburgh Zoo, he found two parcels of land totaling slightly more than 18 acres. Construction began in 1976 and was completed in 1982. The result was “Bayernhof,” Chuck’s one-of-a-kind castle in O’Hara Township.
+                    </p>
+
+                    <p>Chuck had a modest collection of antique music boxes which he had begun to purchase in the early 1970s. However, in the late 1980s, he began to accumulate larger, more intricate automatic antique music machines. This hobby soon became a passion, and eventually he assembled a world-class collection of these unusual and amazing inventions.
+                    </p>
+                </div>
+                <div class="clear"></div>
+            </section>
+            
+<!--  FOOTER  -->
+            <section id="aboutpage_part3">
+                <h2 id="aboutpage_h2">Tours are guided and are by appointment only and must be scheduled before arriving at the Museum.</h2>
+                <h5><a class="button part3_button" href="planYourVisit.html">Plan Your Visit</a></h5>
+            </section>
+        </main>
+    </body>
+</html>

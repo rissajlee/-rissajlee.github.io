@@ -1,0 +1,1710 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ul,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/*-------------- CUSTOM CSS ---------------*/
+
+/*-------------Document Fonts--------------*/
+
+html * {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.clear {
+    clear: both;
+}
+
+@font-face{
+    font-family: 'blackcastlemf';
+    src: url('fonts/blackcastlemf.ttf');
+}
+
+@font-face{
+    font-family: 'KannadaMN';
+    src: url('fonts/Kannada MN.ttc');
+}
+
+/*-------------Backgrounds--------------*/
+
+/*background for index.html*/
+#homepage_background {
+    background-image: url(images/homepage_bg.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 700px;
+}
+
+main#schedule {
+    background-image: url(images/schedule.jpg);
+    background-size: cover;
+    width: auto;
+    height: max-content;
+}
+
+/*---------Header & Navigation----------*/
+
+header {
+    z-index: 10000;
+    background: linear-gradient(to bottom, rgba(0,0,0,1),  rgba(0,0,0,0.9) 20%, rgba(0,0,0,0.45) 60%, rgba(0,0,0,0.2));
+    height: 110px;
+    width: 100vw;
+    position: fixed;
+}
+
+#logo {
+    font-family: blackcastlemf;
+    font-size: 230%;
+    color: #D4AC5F;
+    padding: 28px;
+    float: left;
+    text-decoration: none;
+}
+
+nav {
+    float: right;
+    display: block;
+    padding: 36px;
+}
+
+.vertical_line {
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav a {
+    font-family: KannadaMN;
+    text-decoration: none;
+    color: white;
+    padding: 1em;
+}
+
+nav a:hover {
+    color: #D4AC5F;
+}
+
+.button {
+    font-family:KannadaMN; 
+    text-decoration: none;
+    background: #D4AC5F;
+    color: black;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.button:hover {
+    background: #AD7F25;
+}
+
+.Nav_button {
+    margin-left: 1em;
+    padding: 8px 12px;
+}
+
+.Nav_button:hover {
+    color: black;
+}
+
+nav ul li ul {
+    position: absolute;
+}
+
+nav ul li ul li {
+    display: none;
+}
+
+nav ul li:hover ul li{
+    display: block;
+    width: max-content;
+    font-size: 0.8em;
+    margin-top: 0.8rem;
+    margin-left: 1rem;
+} 
+
+nav ul li:hover ul li:first-child {
+    margin-top: 1.5rem;
+} 
+
+
+
+/*------------part1-------------*/
+.homepage_slide_text {
+    font-family: 'KannadaMN';
+    padding: 12em 0 0 8%;
+    color: white;
+    width: 40%;
+    float: left;
+}
+
+.homepage_h6  {
+    padding: 10px 10px 5px 10px;
+    display: inline-block;
+}
+
+#line {
+    width: 150px;
+    padding-left: 10px;
+}
+
+.homepage_h1 {
+    padding: 30px 10px 10px 10px;
+    font-size: 280%;
+}
+
+.homepage_p {
+    font-family: 'Helvetica', sans-serif; 
+    padding: 10px;
+    line-height: 1.3em;
+    word-spacing: 1px;
+    width: 90%;
+}
+
+.part1_button {
+    margin-left: 10px;
+    margin-top: 80px;
+    display: inline-block;
+}
+
+.homepage_slide_img {
+    width: 40%;
+    max-width:450px;
+    height: auto;
+    float: right;
+    padding-top: 10%;
+    margin-right: 10%;
+}
+
+.slider {
+	overflow: hidden;
+}
+
+.slider figure {
+	width:33.3%;
+	float: left;
+}
+
+.slider figure .component {
+	width:100%;
+	float: left;
+}
+
+.slider {
+	position: relative;
+	width:300%;
+	margin:0;
+	left:0;
+	animation: 30s slidy infinite;
+}
+
+@keyframes slidy {
+	0% {
+		left:0%;
+	}
+	
+	13% {
+			left:0%;
+		}
+
+	17% {
+		left:-100%;
+		}
+
+
+	33% {
+		left:-100%;
+		}
+
+	37% {
+		left:-200%;
+		}
+
+	63% {
+		left:-200%;
+	}
+
+	67% {
+		left:-100%;
+		}
+	
+	83% {
+		left:-100%;
+		}
+
+	87% {
+		left:0%;
+	}
+
+	100% {
+		left:0%;
+	}
+
+}
+/*------------Homepage Part2-------------*/
+
+#part2 {
+    background: #343434;
+    width:100vw;
+    height:400px;
+    margin: 150px 0 0 0;
+    vertical-align: bottom;
+}
+
+#part2_aside {
+    float: right;
+    width: 30%;
+    color: white;
+    padding: 4em;
+    margin-top: 40px;
+    line-height: 1.3em;
+}
+
+#part2_image {
+    width: 70%;
+    max-height:400px;
+}
+
+.part2_button {
+    margin-top: 80px;
+    display: inline-block;
+}
+
+#part2_p {
+    font-family: Helvetica, sans-serif;
+    width: 70%;
+    padding: 80px;
+    line-height: 1.3em;
+    word-spacing: 1px;
+    margin: 0 auto;
+}
+
+/*------------Homepage Part3-------------*/
+
+#homepage_part3 {
+    background: #343434;
+    width:100vw;
+    height:500px;
+}
+
+#homepage_h2 {
+    font-family: KannadaMN;
+    font-size: 150%;
+    color: white;
+    width:55%;
+    text-align: center;
+    padding: 50px 80px 50px 80px;
+    margin: 0 auto;
+    line-height: 1.3em;
+    font-weight: 100;  
+}
+
+.part3_button {
+    width: 130px;
+    display: block;
+    margin: 0 auto;
+}
+
+#part3_figures {
+    display: grid;
+    grid-template-columns: auto 66% auto;
+}
+
+#part3_figures_block {
+    display: grid;
+    grid-template-columns: 33.3% 33.4% 33.3%;
+    justify-content: center
+}
+
+
+.homepage_figure {
+    position: relative;
+    vertical-align: top;
+    padding: 2em 2em;
+}
+
+.figure_icons {
+    width: auto;
+    height: 140px;
+    padding: 2em 0;
+    display: block;
+    margin: 0 auto;
+}
+
+.figure_text {
+    color: #D4AC5F;
+    line-height: 1.2em;
+    text-align: center;
+}
+
+/*----------------------About-------------------------*/
+.all {
+    background: #BC9D62;
+}
+
+#aboutTitle {
+    text-align: center;
+    padding-top: 7em;
+    margin-bottom: -5em;
+    font-family: 'KannadaMN';
+    color: white;
+    font-size: 22px;
+}
+
+#about {
+    position: relative;
+    background-image: url(images/bkg1.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+img#headshot {
+    position: absolute;
+    left: 6%;
+    top: 33%;
+    z-index: 1;
+    width: 19%;
+    height: auto;
+}
+
+#aboutText {
+    box-sizing: border-box;
+    width: 100vw;
+    margin-top: 13%;
+    padding: 4% 13% 3% 30%;
+    background: #FFFFFF;
+    opacity: 0.7;
+    line-height: 1.6em;
+    font-family:'Lato', sans-serif;
+}
+
+#aboutText p {
+    padding-bottom: 1.5em;
+}
+
+/*-----------------History----------------- */
+
+#history{
+    position: relative;
+}
+
+#historyTitle {
+    padding-top: 2em;
+    margin-bottom: -4em;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    font-family: 'KannadaMN', serif;
+}
+
+#historyText {
+    float: left;
+    width: 100vw;
+    box-sizing: border-box;
+    margin-top: 10%;
+    margin-bottom: -25em;
+    padding: 3% 31% 1% 10%;
+    background: #FFFFFF;
+    opacity: 0.6;
+    line-height: 1.6em;
+    font-family:'Lato', sans-serif;
+}
+
+#historyText p {
+    padding-bottom: 1.5em;
+}
+
+img#window {
+    position: absolute;
+    right: 6%;
+    top: 5em;
+    z-index: 1;
+    width: 18%;
+    height: auto;
+}
+
+
+ /*-----------------About/History Footer------------------ */
+
+#aboutpage_part3 {
+    background: #343434;
+    width:100vw;
+    height:190px;
+    margin-top: 32em;
+}
+
+#aboutpage_h2 {
+    font-family: KannadaMN;
+    font-size: 125%;
+    color: white;
+    width:55%;
+    text-align: center;
+    padding: 35px 80px 30px 80px;
+    margin: 0 auto;
+    line-height: 1.3em;
+    font-weight: 100;  
+}
+
+.part3_button {
+    width: 130px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/*------------- Preservation -------------*/
+.preservationBanner {
+    background-image: url(images/preservation.jpg);
+    background-size: cover;
+    height: 105vh;
+}
+
+.preservationAll {
+    background: #C4AA67;
+}
+
+#bannerText {
+    width: 36vw;
+    color: white;
+    padding-top: 18%;
+    padding-left: 10%;
+}
+
+#bannerText h2 {
+    font-size: 24px;
+    font-family: KannadaMN;
+    padding-bottom: 8%;
+}
+
+#bannerText p {
+    padding-top: 2%;
+    font-family: Helvetica, serif;
+    line-height: 1.3em;
+    color: #F2F3F4;
+}
+
+#bannerText a {
+    text-decoration: none;
+}
+
+#donateButton {
+    font-family:KannadaMN; 
+    width: 35%;
+    margin-top: 12%;
+    text-align: center;
+    padding: 0.6em;
+    background: #D4AC5F;
+    color: black;
+    font-size: 17px;
+}
+
+#preservationText {
+    box-sizing: border-box;
+    width: 100vw;
+    padding: 3% 10% 4% 10%;
+    font-family: Helvetica, serif;
+    line-height: 1.5em;
+    color: #202020;
+}
+
+#preservationText p:first-child {
+    padding-top: 2em;
+}
+
+#preservationText p:first-child, #preservationText p:nth-child(2) {
+    padding-bottom: 1em;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.musicIcons {
+    padding-bottom: 3%;
+}
+
+#music1, #music4 {
+    width: 20vw;
+}
+
+#music2 {
+    width: 17vw;
+}
+
+#music3 {
+    width: 22vw;
+}
+
+#music1 {
+    margin-left: 22vh;
+}
+
+#iconFooter {
+    box-sizing: border-box;
+    width: 100vw;
+    background: #343434;
+    color: #F2F3F4;
+    padding: 2% 10% 2% 10%;
+    line-height: 1.3em;
+    font-size: 14px;
+    opacity: 0.88;
+}
+
+
+/*--------------Location & Map page-------------------*/
+
+#location_bg {
+    width: 100vw;
+    height: auto;
+    background: #D4AC5F;
+}
+
+#location_line {
+	height: 23vh;
+	width:2px;
+    border-left: 2px solid black;
+    display:block;
+    margin:0 auto 4vh auto;
+}
+
+section.grid {
+    display: grid;
+    grid-template-columns: auto 90% auto;
+}
+
+div.grid_block {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center
+}
+
+.location_contact {
+    padding:2em 4em;
+    text-align: center;
+}
+
+#location_h2 {
+    font-size: 200%;
+    font-family: KannadaMN;
+    color:black;
+    text-align: center;
+}
+
+.location_h3 {
+    font-family:'Lato', sans-serif;
+    font-weight: 900;
+    font-size:100%;
+    padding: 1em;
+}
+
+.location_h5 {
+    font-family:'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.red{
+    color:red;
+}
+
+
+#location_part2 {
+    width: 100vw;
+    height: 600px;
+    background: #000000;
+}
+
+#location_part2_map {
+	height: 50px
+}
+
+#map {
+	height: 65%;
+	width:60%;
+	display: block;
+    margin: 0 auto;
+	}
+
+.note {
+    color: white;
+    text-align: center;
+    display: block;
+    margin: 1em auto;
+    padding-bottom: 1em;
+}
+
+/*--------------Tour Bayernhof** page-------------------*/
+
+body#tour {
+    height: max-content;
+    background-color: #343434;
+}
+
+main#tour {
+    background-image: url(images/banner3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+section#tour {
+    width: 100vw;
+    position: relative;
+}
+
+video {
+    display: block;
+    padding-top: 15vh;
+    margin: 0 auto;
+    width: 65%;
+    height: auto;
+}
+
+iframe {
+    display: block;
+    margin: 1rem auto 5vh auto;
+}
+
+audio {
+    display: block;
+    background-color: rgba(0,0,0,0);
+    margin: 1rem auto 5vh auto;
+}
+
+
+/*--------------Plan Your Visit page-------------------*/
+
+body#plan {
+    background-color: #D4AC5F;
+}
+
+main#plan {
+    background-image: url(images/planYourVisit.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main#plan a {
+    text-decoration: none;
+}
+
+section#plan {
+    background-color: rgba(34,34,34,0.95);
+    position: relative;
+    padding: 18% 10% 7% 10%;
+    width: max-content;
+    height: max-content;
+    display: block;
+}
+
+
+h1#Plan {
+    color: white;
+    margin: 0 0 8% 1rem;
+    font-size: 24px;
+    font-family: 'KannadaMN';
+}
+
+div.square {
+    width: 40vw;
+    height: max-content;
+    padding-bottom: 1.5rem;
+    border-top: 1px solid #f2f2f2;
+    transition: ease-in-out 0.8s all;
+}
+
+section#plan div.square:nth-child(4) {
+    border-bottom: 1px solid #f2f2f2;
+}
+
+div.square:hover {
+    transition: ease-in-out 0.8s all;
+    background-color: #343434;
+}
+
+.buttonCenter {
+    width: max-content;
+    font-size: 1.2em;
+    margin-left: 1rem;
+    float: right;
+}
+
+p.desc {
+    padding: 1rem 1rem;
+    font-size: 14px;
+    color: #f2f2f2;
+    line-height: 1.3em;
+}
+
+figure {
+    float: right;
+}
+
+figcaption {
+    color: #f2f2f2;
+    font-size: 12px;
+}
+
+img#imgLogo {
+    margin: 25% 1rem 0.5rem 1rem;
+    width: 10vw;
+}
+
+
+
+
+
+/*--------------Scheduling Form page-------------------*/
+
+h1.centerTop {
+    font-size: 24px;
+    font-family: 'KannaadMN', serif;
+    color: #fff;
+    position: relative;
+    width: 100vw;
+    text-align: center;
+    padding-top: 15vh;
+    padding-bottom: 1rem;
+    margin: 0;
+}
+
+h2#schedule {
+    font-size: 150%;
+    font-family: 'KannadaMN', serif;
+    color: #D4AC5F;
+}
+
+h3#schedule {
+    font-family:'Lato', sans-serif;
+    font-size: 18px;
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+    color: #f2f2f2;
+}
+
+div.section {
+	position: relative;
+	height: max-content;
+}
+
+div.container {
+    padding: 0 0 10vh 0;
+    margin: 0;
+    width: 100vw;
+}
+
+div.center {
+    width: 568px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem;
+    background-color: rgba(255,255,255,0.15);
+    margin-bottom: 2rem;
+}
+
+ol li {
+    color: #f2f2f2;
+    margin: 0.7rem 0 0.7rem 0.5rem;
+    line-height: 1.2em;
+    font-size: 16px;
+}
+
+#booking {
+	font-family: 'KannadaMN', serif;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+}
+
+.booking-form {
+	max-width: 586px;
+	width: 100%;
+	margin: auto;
+}
+
+.booking-form .form-group {
+	position: relative;
+	margin-bottom: 0px;
+}
+
+.booking-form>form .row.no-margin {
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.booking-form>form .row.no-margin [class*="col-"] {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+.booking-form .form-control {
+	background-color: rgba(255,255,255,0.9);
+	height: 80px;
+	padding: 25px 20px 0px;
+	border-radius: 0px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	color: #0e2753;
+	/*border: 1px solid #707070;*/
+	border-bottom: 0px;
+	font-size: 20px;
+	font-weight: 700;
+	-webkit-transition: 0.2s all;
+	transition: 0.2s all;
+}
+
+.booking-form [class*="col-"]+[class*="col-"] .form-group .form-control {
+	border-left: 0px;
+}
+
+.booking-form .form-control::-webkit-input-placeholder {
+	color: #dddee9;
+}
+
+.booking-form .form-control:-ms-input-placeholder {
+	color: #dddee9;
+}
+
+.booking-form .form-control::placeholder {
+	color: #dddee9;
+}
+
+.booking-form .form-control:focus {
+	background: #f9f9f9;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.booking-form input[type="date"].form-control:invalid {
+	color: #dddee9;
+}
+
+.booking-form select.form-control {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.booking-form select.form-control:invalid {
+	color: #909090;
+}
+
+.booking-form select.form-control option {
+	color: #dddee9;
+}
+
+.booking-form select.form-control+.select-arrow {
+	position: absolute;
+	right: 0px;
+	bottom: 4px;
+	width: 32px;
+	line-height: 32px;
+	height: 32px;
+	text-align: center;
+	pointer-events: none;
+	color: #dddee9;
+	font-size: 20px;
+}
+
+.booking-form select.form-control+.select-arrow:after {
+	content: '\279C';
+	display: block;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.booking-form .form-label {
+	position: absolute;
+	left: 20px;
+	top: 10px;
+	color: #D4AC5F;
+	font-weight: 800;
+	line-height: 24px;
+	/*font-style: italic;*/
+	height: 24px;
+	font-size: 14px;
+
+}
+
+.booking-form .submit-btn {
+	color: #fff;
+	background-color: #D4AC5F;
+	font-weight: 700;
+	height: 80px;
+	font-size: 18px;
+	text-transform: capitalize;
+	border: 1px solid #707070;
+	width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+	.booking-form [class*="col-"]+[class*="col-"] .form-group .form-control {
+		border-left: 1px solid #dddee9;
+	}
+}
+
+
+
+/*------------------Media Queries---------------*/
+
+/*----------------414px Navigation--------------*/
+
+@media screen and (max-width: 414px) {
+    
+    /*--------------Navigation---------------*/
+    
+    header {
+        background: rgba(0,0,0,1);
+        margin: 0;
+        height: 4.9em;
+    }
+    
+    
+    #menu {
+        display: none;
+    }
+
+    nav {
+        padding: 0;
+    }
+    
+    #logo {
+        padding: 20px 0 0 30px;
+        font-size: 2rem;
+    }
+        
+    #hamburger {
+        display: block;
+        float: right;
+        height: 4.9rem;
+        width: 4rem;
+        background: #D4AC4F;
+        padding-top: 1.5rem;
+        
+    }
+    
+    #hamburger div {
+        width: 2rem;
+        height: 3px;
+        border-radius: 15px;
+        background: #000000;
+        margin: .4rem auto;
+        position: relative;
+        transition: .15s ease-in-out all;
+    }
+    
+    #hamburger.switch {
+        border-bottom: 1px #000000 solid;
+    }
+    
+    #hamburger.switch div:first-child {
+    opacity: 0;
+    }
+
+    #hamburger.switch div:nth-child(2) {
+        transform: rotate(45deg);
+        transform-origin: center center;
+    }
+
+    #hamburger.switch div:last-child {
+        transform: rotate(-45deg);
+        transform-origin: center center;
+        bottom: .5rem;
+    }
+
+    /*---------mobile nav--------------*/
+    ul#menu a.button {
+        display: block;
+        width: 100vw;
+        height: auto;
+        background: #D4AC4F;
+        text-align: left;
+        margin: 0;
+        padding: 1em 3em;
+        font-size: 1em;
+        color: #000;
+        border-bottom: 1px black solid;
+    }
+
+    ul#menu a.button:hover {
+        background-color: #BE923F;
+    }
+
+    ul#menu.on {
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+    
+    ul#menu.on li {
+        border-bottom: 1px black solid;
+        margin: 0;
+    }
+        
+    ul#menu.on li.noMobileMenu {
+        display: none;
+    }
+
+    ul#menu.on li a.mobileMenu {
+        display: block;
+        text-align: left;
+        padding-left: 3em;
+        background: #D4AC4F;
+        width: 100vw;
+        color: #000;
+    }
+
+    ul#menu.on li a.mobileMenu:hover {
+        color: #000;
+        background-color: #BE923F;
+    }
+    
+    ul#menu.on ul li {
+        display: block;
+        margin: 0;
+    }
+    
+    ul#menu li:hover ul li {
+        display: block;
+        width: 100vw;
+        font-size: inherit;
+        margin: 0;
+    } 
+    
+    ul#menu li:hover ul li:first-child {
+        margin: 0;
+    } 
+
+    
+    ul#menu.on ul a.mobileMenu {
+        display: block;
+        text-align: left;
+        background: #D4AC4F;
+        width: 100vw;
+        padding-left: 6em;
+        color: #000000;
+    }
+    
+    ul#menu.on ul a.dash:before {
+        content: "- ";
+    }
+}
+
+
+/*-------------- 1024PX RESPONSIVE ---------------*/
+/*-------------- About/History ---------------*/
+@media screen and (max-width: 1024px) {
+    #about {
+        height: 90vh;
+    }
+    
+    #aboutText {
+        margin-top: 18%;
+        padding-top: 5%;
+        padding-right: 8%;
+    }
+    
+    img#headshot {
+        top: 38%;
+        left: 6%;
+    }
+
+    #historyText {
+        margin-top: 13%;
+        padding-top:5%;
+    }
+
+    img#window {
+        top: 11.3em;
+    }
+    
+    #aboutpage_part3 {
+        width:100vw;
+        height:240px;
+        margin-top: 30em;
+    }
+    
+    #bannerText {
+        width: 50vw;
+        /*height: 40vh;*/
+        padding-top: 35vh;
+    }
+    
+    #music1 {
+        /*width: 30vw;*/
+        margin-left: 10vw;
+    }
+    
+    /*#music2 {*/
+    /*    width: 26vw;*/
+    /*    margin-left: 10vw;*/
+    /*}*/
+    
+    /*#music3 {*/
+    /*    width: 33vw;*/
+    /*    margin-left: 15.5vw;*/
+    /*}*/
+    
+    /*#music4 {*/
+    /*    width: 30vw;*/
+    /*    margin-left: 6vw;*/
+    /*}*/
+}
+
+
+@media screen and (max-width: 768px) {
+    #about {
+        height: 80vh;
+    }
+    
+    #aboutText {
+        margin-top: 30%;
+        padding-top: 5%;
+        padding-right: 8%;
+    }
+    
+    img#headshot {
+        top: 42%;
+        left: 6%;
+    }
+
+    #historyText {
+        margin-top: 13%;
+        padding-top:5%;
+    }
+
+    img#window {
+        top: 11.3em;
+    }
+    
+    #aboutpage_part3 {
+        width:100vw;
+        height:240px;
+        margin-top: 30em;
+    }
+}
+
+
+@media screen and (max-width: 736px) {
+    #about {
+        height: 157vh;
+    }
+    
+    #aboutText {
+        margin-top: 22%;
+        padding-top: 5%;
+        padding-right: 8%;
+    }
+    
+    img#headshot {
+        top: 50%;
+        left: 6%;
+    }
+
+    #historyText {
+        margin-top: 16%;
+        padding-top:5%;
+    }
+
+    img#window {
+        top: 13em;
+    }
+    
+    #aboutpage_part3 {
+        width:100vw;
+        height:240px;
+        margin-top: 30em;
+    }
+}
+
+
+@media screen and (max-width: 414px) {
+    #about {
+    position: relative;
+    background-image: url(images/mobile.jpg);
+    background-size: cover;
+    height: auto;
+    }
+
+    #aboutTitle {
+        padding-top: 5.5em;
+    }
+    
+    img#headshot {
+        width: 45%;
+        left: 27.5%;
+        top: 20%;
+    }
+    
+    #aboutText {
+        margin-top: 41vh;
+        padding: 22vh 11% 3% 11%;
+        background: #FFFFFF;
+        opacity: 0.7;
+        line-height: 1.6em;
+    }
+    
+    img#window {
+        width: 43%;
+        left: 28.5%;
+        top: 16%;
+    }
+    
+    #historyText {
+        margin-top: 55%;
+        margin-bottom: -25em;
+        padding: 31vh 11% 3% 11%;
+    }
+    
+    #aboutpage_part3 {
+        width:100vw;
+        height:280px;
+        margin-top: 27em;
+    }
+    
+    #aboutpage_h2 {
+        font-size: 110% ;
+        width:100%;
+        padding: 3em 3em;
+        padding-top: 3em;
+    }
+    
+}    
+
+/*----------Preservation Responsive-----------*/
+@media screen and (max-width:1024px) {
+
+}    
+    
+@media screen and (max-width:768px) {
+    #bannerText {
+        width: 60vw;
+        padding-top: 45%;
+        margin-left: 1.5vw;
+    }
+    
+     .preservationBanner {
+        height: 850px;
+    }   
+    
+    #music1 {
+        width: 30vw;
+        margin-left: 17vw;
+    }
+    
+    #music2 {
+        width: 26vw;
+        margin-left: 10vw;
+    }
+    
+    #music3 {
+        width: 33vw;
+        margin-left: 15.5vw;
+    }
+    
+    #music4 {
+        width: 30vw;
+        margin-left: 6vw;
+    }
+    
+}
+
+@media screen and (max-width:736px) {
+    .preservationBanner {
+        height: 105vh;
+    }
+    
+    #bannerText {
+        padding-top: 20%;
+    }
+    
+}
+    
+    
+@media screen and (max-width:414px) {
+    #bannerText {
+        width: 90vw;
+        padding-top: 50%;
+        margin-left: 1.5vw;
+    }
+    
+    .preservationBanner {
+        height: 100vh;
+    }   
+    
+    #donateButton {
+        margin-left: 22vw;
+    }
+    
+    #music1 {
+        width: 70vw;
+        margin-left: 16vw;
+    }
+    
+    #music2 {
+        width: 66vw;
+        margin-left: 18vw;
+    }
+    
+    #music3 {
+        width: 75vw;
+        margin-left: 13vw;
+    }
+    
+    #music4 {
+        width: 70vw;
+        margin-left: 15vw;
+        margin-bottom: 3vw;
+    }
+}
+
+
+/*----------Homepage Responsive-----------*/
+@media screen and (max-width:1280px) {
+    .homepage_slide_img {
+        width: 40%;
+        margin-right:10%;
+        padding-top:15%;
+        /*border: 1px solid red;*/
+    }
+}
+
+@media screen and (max-width: 1112px) {
+    .homepage_slide_img {
+        margin-right: 10%;
+        padding-top: 15%;
+        /*border: 1px solid red;*/
+    }
+    
+    #homepage_part3 {
+        height:600px;
+    }
+}
+
+ @media screen and (max-width:1024px) {
+    #part2_aside {
+        margin-top: 0px;
+    }
+    
+    #part2_image {
+        max-height:500px;
+    }
+    
+    #homepage_part3 {
+        height:550px;
+    }
+    
+    .homepage_slide_img {
+        width: 40%;
+        margin-right:10%;
+        padding-top: 17%;
+        /*border: 1px solid yellow;*/
+    }
+}
+
+@media screen and (max-width:414px) {
+    
+    .homepage_slide_img {
+        width: 230px;
+        height: auto;
+        float: none;
+        margin: 0  auto;
+        padding-top: 5em;
+        /*border: 1px solid blue;*/
+    }
+    
+    #homepage_background {
+    width: 100vw;
+    height: 800px;
+    }
+    
+    .homepage_slide_text {
+        padding: 8em 15px 0 15px;
+        width: 100%;
+        float: none;
+    }
+    
+    .homepage_h1 {
+    font-size: 200%;
+    }
+    
+    .part1_button {
+    margin-top: 30px;
+    }
+    
+    #part2_aside {
+    float: none;
+    width: 100%;
+    padding: 4em;
+    /*margin-top: 40px;*/
+    }
+    
+    .part2_button {
+        width: 150px;
+        display: block;
+        margin: 50px auto 0 auto;
+    }
+    
+    #part2_image {
+        width: 100%;
+        height: auto;
+    }
+    
+    #part2 {
+        height: 500px;
+    }
+    
+    #part2_p {
+        width: 100%;
+        padding: 4em;
+        margin: 0px;
+    }
+    
+    #homepage_h2 {
+        font-size: 110%;
+        width:100%;
+        padding: 3em 3em;
+    }
+    
+    #part3_figures {
+        display: block;
+        
+    }
+    
+    .homepage_figure {
+        padding: 2em 4.5em;
+    }
+    
+    #part3_figures_block {
+        display: block;
+    }
+    
+    #homepage_part3 {
+        width:100vw;
+        height:900px;
+    }
+
+    .figure_icons {
+        height: 100px;
+        padding: 1em;
+    }
+}
+
+
+    /*-------------Location & Map Responsive--------------*/
+
+@media screen and (max-width: 414px) {
+
+
+    #location_line {
+    	height: 150px;
+        margin:0 auto 2vh auto;
+    }
+    
+    #location_h2 {
+        font-size: 150%;
+        margin-bottom: 1em;
+    }
+    
+    section.grid {
+        height: 450px;
+    }
+    
+    div.grid_block {
+        display: block;
+
+    }
+    
+    .location_contact {
+       padding:1em 4em; 
+    }
+    
+    #map {
+	height: 65%;
+	width:100%;
+	}
+	
+	#location_part2_map {
+	    height: 0px;
+    }
+    
+    .note {
+    font-size: 80%;
+    padding: 1em 2em 0 2em;
+    }
+    
+    #location_part2 {
+    height: 550px;
+    }
+}
+
+
+
+@media screen and (max-width: 414px) {
+    /*--------------Tour Bayernhof page-------------------*/
+
+    video {
+        width: 100%;
+        height: auto;
+    }
+
+    /*--------------Plan Your Visit page-------------------*/
+
+    main#plan {
+        height: 100vh;
+        padding: 0;
+        background-color: #343434;
+        background-image: none;
+    }
+    
+    
+    section#plan {
+        background-color: #343434;
+        border-bottom: none;
+        margin: 0;
+        position: relative;
+        display: block;
+        flex-wrap: none;
+        padding: 0;
+        height: min-content;
+    }
+    
+    h1#Plan {
+        width: 100vw;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 1rem;
+        padding: 25% 0 0 0;
+        font-size: 24px;
+    }
+    
+    div.square {
+        margin: 1rem 0;
+        padding: 2rem 1rem;
+        width: 100vw;
+        height: min-content;
+        display: block;
+        flex-wrap: none;
+    }
+    
+    
+    .buttonCenter {
+        width: max-content;
+        font-size: 1.2em;
+        margin-left: 1rem;
+        float: left;
+    }
+    
+    p.desc {
+        padding: 1rem;
+        font-size: 14px;
+    }
+    
+    figure {
+        padding: 0;
+    }
+    
+    img#imgLogo {
+        display: block;
+        vertical-align: middle;
+        width: 20vw;
+        height: auto;
+    }
+    
+    figcaption {
+        margin: 0 1rem 1rem 0;
+    }
+
+    
+    /*-------------Scheduling form---------------*/
+
+    h1.centerTop {
+        font-family: "KannaadMN", serif;
+        width: 100vw;
+        padding-top: 7rem;
+        padding-bottom: 1rem;
+        margin: 0;
+    }
+    
+    h2#schedule {
+        font-size: 110%;
+        font-family: 'KannadaMN', serif;
+        color: #fff;
+        text-decoration: underline;
+    }
+    
+    p.desc {
+        color: #f2f2f2;
+        width: 80vw;
+        line-height; 1.8em;
+        padding: 0 0 1.4rem 0;
+        font-family: 'Helvetica', sans-serif;
+    }
+
+    div.center {
+        width: 100vw;
+        padding: 1rem 2rem;
+        border-top: 1px solid white;
+        background-color: rgba(255,255,255,0.0);
+    }
+    
+    div.container {
+        padding: 2rem;
+    }
+
+}

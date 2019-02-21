@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Location &amp Map</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i" rel="stylesheet">
+        
+        <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $("#hamburger").click(function() {
+                    $("#menu").toggleClass("on");
+                    $("#hamburger").toggleClass("switch");
+                })
+            })
+        </script>
+        
+    </head>
+    
+    <body>
+        <div id="location_bg">
+            <header>
+                <a href="index.html"><h1 id="logo">Bayernhof Museum</h1></a>
+                <a href="#" id="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </a>
+                <nav>
+                    <ul id="menu">
+                        <li><a href="about.html" class="mobileMenu">About</a></li>
+                        <li class="noMobileMenu"><a class="vertical_line">|</a></li>
+                        <li><a href="tourbayernhof.html" class="mobileMenu">Tour Bayernhof</a></li>
+                        <li class="noMobileMenu"><a class="vertical_line">|</a></li>
+                        <li><a class="button Nav_button" href="planYourVisit.html">Plan Your Visit</a> 
+                            <ul>
+                                <li><a href="scheduleATour.html" class="mobileMenu dash">Schedule a Tour</a></li>
+                                <li><a href="locationAndMap.html" class="mobileMenu dash">Location &amp Map</a></li>
+                                <li><a href="preservation.html" class="mobileMenu dash">Preservation</a></li>
+                            </ul>   
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <div>
+                <div id="location_line"></div>
+                <!-- <hr width="0.1em" size="220px" color= black> -->
+                <h2 id="location_h2">Location &amp Map</h2>
+            </div>
+            
+            <section class="grid">
+                <div></div>
+                <div class="grid_block">
+                    <div class="location_contact">
+                        <h3 class="location_h3">CONTACT <spin class="red">/</spin></h3>
+                        <h5 class="location_h5">For schedule a tour</br>please call 412-782-4231</h5>
+                    </div>
+                    <div class="location_contact">
+                        <h3 class="location_h3">WHEN <spin class="red">/</spin></h3>
+                        <h5 class="location_h5">Tours normally begin</br> at 10:00 AM and 2:00 PM</h5>
+                    </div>
+                    <div class="location_contact">
+                        <h3 class="location_h3">WHERE <spin class="red">/</spin></h3>
+                        <h5 class="location_h5">225 St Charles Pl<br>Pittsburgh, PA 15215</h5>
+                    </div>
+                </div>
+                <div></div>
+            </section>
+            
+            <div id="location_part2">
+
+                <div id="location_part2_map"></div>
+
+                <div id="map"></div>
+                    <script>
+                      function initMap() {
+                        var bayernhof = {lat: 40.49832430000001, lng: -79.9158167};
+                        // The map, centered at Uluru
+                        var map = new google.maps.Map(
+                            document.getElementById('map'), {zoom: 15, center: bayernhof});
+                        // The marker, positioned at bayernhof
+                        var marker = new google.maps.Marker({position: bayernhof, map: map});
+                      }
+                    </script>
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0IyhHO6zkj0nvzUZKiQYwBkMCWxyBj84&callback=initMap"
+                    async defer></script>
+
+                <h3 class="location_h3 note">NOTE</h3>
+                <h5 class="location_h5 note">On the day of your tour, please arrive at Bayernhof</br>approximately 15 minutes before the tour is scheduled to begin.</h5>
+                
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bayernhof Museum</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+        <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $("#hamburger").click(function() {
+                    $("#menu").toggleClass("on");
+                    $("#hamburger").toggleClass("switch");
+                })
+            })
+        </script>
+        
+    </head>
+    
+    <body>
+       
+        <main id="homepage_background">
+            <header>
+                <a href="index.html"><h1 id="logo">Bayernhof Museum</h1></a>
+                <a href="#" id="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </a>
+                <nav>
+                    <ul id="menu">
+                        <li><a href="about.html" class="mobileMenu">About</a></li>
+                        <li class="noMobileMenu"><a class="vertical_line">|</a></li>
+                        <li><a href="tourbayernhof.html" class="mobileMenu">Tour Bayernhof</a></li>
+                        <li class="noMobileMenu"><a class="vertical_line">|</a></li>
+                        <li><a class="button Nav_button" href="planYourVisit.html">Plan Your Visit</a> 
+                            <ul>
+                                <li><a href="scheduleATour.html" class="mobileMenu dash">Schedule a Tour</a></li>
+                                <li><a href="locationAndMap.html" class="mobileMenu dash">Location &amp Map</a></li>
+                                <li><a href="preservation.html" class="mobileMenu dash">Preservation</a></li>
+                            </ul>   
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            
+        <!---------------------homepage part1------------------>
+            <div class=slider>
+
+	            <div class="slide">
+	            	<figure>
+	            		<div>
+			                <div class="homepage_slide_text">
+			                    <h6 class="homepage_h6">Music Gallery</h6>
+			                    <div id="line"><hr/></div>
+			                    <h1 class="homepage_h1">Hupfeld Phonoliszt Violina</h1>
+			                    <p class="homepage_p">Hupfeld Phonoliszt Violina was made in Germany by Ludwig Hupfeld. The “Hupfeld” was dubbed the “8th Wonder of the World.”</p>
+			                    <a href="#"><h5 class="button part1_button">Learn More</h5></a>
+			                </div>
+			                
+			                <aside class="homepage_slide_img">
+			                    <img src="images/Slide1.png" alt="Hupfeld Phonoliszt Violina" width="100%" height="auto">
+		                	</aside>
+	                	</div>
+	            	</figure>
+	            </div>
+	            
+
+	            <div class="slide">
+	            	<figure>
+	            		<div class="component">
+			                <div class="homepage_slide_text">
+			                    <h6 class="homepage_h6">Music Gallery</h6>
+			                    <div id="line"><hr/></div>
+			                    <h1 class="homepage_h1">Welte Cottage Orchestrion Style 2</h1>
+			                    <p class="homepage_p">An “orchestrion” is an indoor music machine that duplicates the “voices” of a number of different musical instruments.</p>
+			                    <a href="#"><h5 class="button part1_button">Learn More</h5></a>
+			                </div>
+			                
+			                <aside class="homepage_slide_img">
+			                    <img src="images/Slide2.png" alt="Hupfeld Phonoliszt Violina" width="100%" height="auto">
+			                </aside>
+		            	</div>
+	            	</figure>
+	            </div>
+
+	            <div class="slide">
+	            	<figure>
+	            		<div>
+			                <div class="homepage_slide_text">
+			                    <h6 class="homepage_h6">Music Gallery</h6>
+			                    <div id="line"><hr/></div>
+			                    <h1 class="homepage_h1">Mills DeLuxe Model Violano-Virtuoso</h1>
+			                    <p class="homepage_p">A player piano mechanism was added to the violin, and the combination came to be known as the “Violano-Virtuoso.” </p>
+			                    <a href="#"><h5 class="button part1_button">Learn More</h5></a>
+			                </div>
+			                
+			                <aside class="homepage_slide_img">
+			                    <img src="images/Slide3.png" alt="Hupfeld Phonoliszt Violina" width="100%" height="auto">
+			                </aside>
+	           			</div>
+	           		</figure>
+	            </div>
+	           
+
+            </div>
+            
+            
+        </main>
+        
+        <div class="clear"></div>
+        
+        <!---------------------homepage part2------------------>
+        
+        <section id="part2">
+            <img id="part2_image" src="images/newpanaram.png" alt="bayernhof museum photo">
+            <div id="part2_aside">
+                <p>The building itself provides guests with a most enjoyable experience as they pass from one unbelievable room to another, at times through hidden doors and secret passageways.</p>
+                <h5><a href="#" class="button part2_button">Tour Bayernhof</a></h5>
+            </div>
+        </section>
+        
+        
+        <p id="part2_p">This extremely unique, 19,000 square foot museum (the former residence of Charles B. Brown, III, the Museum’s founder) houses a world-class collection of music boxes and other antique automatic music machines, as well as many other fascinating items.
+            <br>
+            <br>
+            Almost the entire south side of the Museum is glass, affording fantastic views up and down the Allegheny River.
+            <br>
+            <br>
+            Join us at Bayernhof Museum for a truly one-of-a-kind adventure.
+        </p>
+        
+        <!---------------------homepage part3------------------>
+        
+        <section id="homepage_part3">
+            <h2 id="homepage_h2">Tours are guided and are by appointment only and must be scheduled before arriving at the Museum.</h2>
+            <h5><a class="button part3_button" href="planYourVisit.html">Plan Your Visit</a></h5>
+            
+            <div id="part3_figures">
+                <div></div>
+                <div id="part3_figures_block">
+                    <figure class="homepage_figure">
+                        <img class="figure_icons" src="images/icon1.png">
+                        <figcaption class="figure_text">Tours are limited to 12 people per tour and children must be 12 years old. 
+                        </figcaption>
+                    </figure>
+                    
+                    <figure class="homepage_figure">
+                        <img class="figure_icons" src="images/icon2.png">
+                        <figcaption class="figure_text">Admission is $10.00 per person.
+                        </figcaption>
+                    </figure>
+                    
+                    <figure class="homepage_figure">
+                        <img class="figure_icons" src="images/icon3.png">
+                        <figcaption class="figure_text">Please call 412-782-4231</br>to schedule your tour
+                    </figcaption>
+                    </figure>
+                </div>
+                <div></div>
+            </div>
+        </section>
+        
+    </body>
+</html>

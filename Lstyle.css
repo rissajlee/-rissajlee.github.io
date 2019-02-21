@@ -1,0 +1,359 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ~~~~~~~~~~  CUSTOM CSS ~~~~~~~~~~ */
+
+.clear {
+    clear:both;
+}
+
+/* FONTS */
+
+html {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+@font-face{
+    font-family: 'blackcastlemf';
+    src: url('fonts/blackcastlemf.ttf');
+}
+
+@font-face{
+    font-family: 'KannadaMN';
+    src: url('fonts/Kannada MN.ttc');
+}
+
+/* NAV BAR */
+
+header {
+    background: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0.9) 20%, rgba(0,0,0,0.45) 60%, rgba(0,0,0,0.2));
+    height: 100px;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+}
+
+#logo {
+    font-family: blackcastlemf;
+    font-size: 230%;
+    color: #D4AC5F;
+    padding: 28px;
+    float: left;
+}
+
+nav {
+    float: right;
+    display: block;
+    padding: 36px;
+}
+
+.vertical_line {
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav a {
+    font-family: KannadaMN;
+    text-decoration: none;
+    color: white;
+    padding: 1em;
+}
+
+nav a:hover {
+    color: #D4AC5F;
+}
+
+.button {
+    font-family:KannadaMN; 
+    text-decoration: none;
+    background: #D4AC5F;
+    color: black;
+    padding: 10px 15px;
+}
+
+.button:hover {
+    background: #AD7F25;
+}
+
+.Nav_button {
+    margin-left: 1em;
+    padding: 8px 12px;
+}
+
+.Nav_button:hover {
+    color: black;
+}
+
+nav ul li ul {
+    position: absolute;
+}
+
+nav ul li ul li {
+    display: none;
+}
+
+nav ul li:hover ul li{
+    display: block;
+    width: max-content;
+    font-size: 0.8em;
+    margin-top: 0.8rem;
+    margin-left: 1rem;
+} 
+
+nav ul li:hover ul li:first-child {
+    margin-top: 1.5rem;
+} 
+
+
+/* ABOUT */
+
+.all {
+    background: #BC9D62;
+}
+
+#aboutTitle {
+    text-align: center;
+    padding-top: 7em;
+    margin-bottom: -5em;
+    font-family: 'KannadaMN';
+    color: white;
+    font-size: 22px;
+}
+
+
+#about {
+    position: relative;
+    height: 100%;
+    background-image: url(images/bkg1.jpg);
+    background-size: cover;
+}
+
+img#headshot {
+    position: absolute;
+    left: 6%;
+    top: 33%;
+    z-index: 1;
+    width: 19%;
+    height: auto;
+}
+
+#aboutText {
+    float: right;
+    width: 58%;
+    margin-top: 15%;
+    padding: 2em 6em 1em 30em;
+    background: #FFFFFF;
+    opacity: 0.7;
+    /*box-sizing: border-box;*/
+}
+
+#aboutText p {
+    font-family:'Lato', sans-serif;
+    line-height: 20px;
+    margin-left: -3em;
+    padding-bottom: 1.5em;
+}
+
+
+/* HISTORY */
+
+#history{
+    position: relative;
+    /*width: 100vw;*/
+}
+
+#historyTitle {
+    padding-top: 2em;
+    margin-bottom: -4em;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    font-family: KannadaMN;
+}
+
+#historyText {
+    float: left;
+    width: 58%;
+    margin-top: 10%;
+    margin-bottom: -25em;
+    padding: 3em 32% 3% 10%;
+    background: #FFFFFF;
+    opacity: 0.6;
+    line-height: 1.5em;
+    /*box-sizing: border-box;*/
+}
+
+#historyText p:first-child {
+    padding-bottom: 2em;
+}
+
+img#window {
+    position: absolute;
+    right: 6%;
+    top: 5em;
+    z-index: 1;
+    width: 18%;
+    height: auto;
+}
+
+
+/* FOOTER */
+
+#aboutpage_part3 {
+    background: #343434;
+    width:100vw;
+    height:190px;
+    margin-top: 33em;
+}
+
+#aboutpage_h2 {
+    font-family: KannadaMN;
+    font-size: 125%;
+    color: white;
+    width:55%;
+    text-align: center;
+    padding: 35px 80px 30px 80px;
+    margin: 0 auto;
+    line-height: 1.3em;
+    font-weight: 100;  
+}
+
+.part3_button {
+    width: 130px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+/*~~~~~~~~~~~~ MEDIA QUERY ~~~~~~~~~~~~~*/
+@media screen and (max-width: 800px) {
+    
+/* ~~~~~~~~~~ ABOUT ~~~~~~~~~*/
+    #aboutText {
+        width: 60%;
+        margin-top: 25%;
+    }
+    
+    #aboutText p:first-child {
+        margin-left: 8%;
+    }
+    
+    #aboutText p:nth-child(2), #aboutText p:last-child {
+        margin-left: -25%;
+        /*width: %;*/
+    }
+    
+    #aboutText {
+        padding-top: 4em;
+        padding-bottom: 1em;
+    }
+    
+    #aboutText p {
+        line-height: 23px;
+        padding-bottom: 1em;
+    }
+    
+    img#headshot {
+        top: 30%;
+        left: 10%;
+    }
+    
+    .title {
+    padding-top: 7em;
+    margin-bottom: -7em;
+    }
+
+/* ~~~~~~~~~ HISTORY ~~~~~~~~ */
+
+    #historyText {
+        margin-top: 15%;
+    }
+
+    #historyText p:last-child {
+        width: 140%;
+        padding-bottom: 5%;
+    }
+    
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

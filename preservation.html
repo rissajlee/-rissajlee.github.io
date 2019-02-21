@@ -1,0 +1,83 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>About/History</title>
+        <meta charset='utf-8'>
+        <link rel='stylesheet' type='text/css' href= 'style.css'>
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $("#hamburger").click(function() {
+                    $("#menu").toggleClass("on");
+                    $("#hamburger").toggleClass("switch");
+                })
+            })
+        </script>
+
+    </head>
+    <body class="preservationAll">
+        <main>
+<!--   NAV BAR    -->
+            <header>
+                <a href="index.html"><h1 id="logo">Bayernhof Museum</h1></a>
+                <a href="#" id="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </a>
+                <nav>
+                    <ul id="menu">
+                        <li><a href="about.html" class="mobileMenu">About</a></li>
+                        <li class="noMobileMenu"><a class="vertical_line">|</a></li>
+                        <li><a href="tourbayernhof.html" class="mobileMenu">Tour Bayernhof</a></li>
+                        <li class="noMobileMenu"><a class="vertical_line">|</a></li>
+                        <li><a class="button Nav_button" href="planYourVisit.html">Plan Your Visit</a> 
+                            <ul>
+                                <li><a href="scheduleATour.html" class="mobileMenu dash">Schedule a Tour</a></li>
+                                <li><a href="locationAndMap.html" class="mobileMenu dash">Location &amp Map</a></li>
+                                <li><a href="preservation.html" class="mobileMenu dash">Preservation</a></li>
+                            </ul>   
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+
+<!--    BANNER     -->
+            <section class=preservationBanner>
+                <div id='bannerText'>
+                    <h2>Educating the Next Generation</h2>
+                    <p>It is only through the interest and efforts of individuals and groups that future generations of music lovers will be able to enjoy and admire these amazing antiques. </p>
+                    <a href="#"><h5 id="donateButton" style="border:1px; border-style:solid; border-color:#D4AC5F;">Contribute</h5></a>
+                </div>
+            </section>
+            
+<!--     TEXT      -->
+            <section id=preservationText>
+                <p>Learning about mechanical music machine collections and opportunities to personally visit and view these collections are major benefits derived from the various groups. Parent organizations, such as the Musical Box Society International (MBSI) and the Automatic Musical Instrument Collectors Association (AMICA), have several thousand members with chapters worldwide. </p1>
+                <p>These organizations publish monthly newsletters and bulletins to keep their members and other friends apprised of recent developments and upcoming events in the world of mechanical music machines. The newsletters give readers the opportunity to buy and sell, through channels unavailable anywhere else, music machines and parts as well as various pieces of memorabilia. </p2>
+                <p>Consider donating for the future of musical machine preservation today!</p3>
+            </section>
+            
+<!--   ICON SCROLLABLE & DISCLAIMER -->
+            <section class='bottomSection'>
+                <div class=musicIcons>
+                    <div class="inline"><img id="music1" src="images/music1.png"></div>
+                    <div class="inline"><img id="music2" src="images/music2.png"></div>
+                    <div class="inline"><img id="music3" src="images/music3.png"></div>
+                    <div class="inline"><img id="music4" src="images/music4.png"></div>
+                </div>
+                <div>
+                <p id='iconFooter'>* The hyperlinks contained in this website are for informational purposes only. The Bayernhof Museum is not responsible for the content of any linked websites.</p>
+                </div>
+            </section>
+            
+            
+        </main>
+    </body>
+</html>
